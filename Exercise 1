@@ -1,0 +1,23 @@
+Exercise 1
+
+All the principles of java are based on classes and its objects
+- Encapsulation: This principle is the practice of keeping field within a
+class private, then providing access to them via public methods. It act as
+a security feature if a class is private it cannot access by any other class,
+public class can access by other class that is within or outside the
+package.
+
+- Inheritance: it’s a special feature of object oriented programming in
+java. It let programmes create new classes that share some of the
+attributes of existing classes. It provides code re-usability.
+Example – Animal is a class that contains some general features relating
+to animals. Lion is a specific class that contains features that are specific
+to an animal Lion.
+- Polymorphism: This principle allows programmers to use the same word
+to mean different things in different contexts. Method overloading,
+method overriding.
+
+- Abstraction: This principle means using simple things to represent
+complexity. Simple things like objects, classes, and variables represent
+more complex underlying code and data. It’s important because it lets
+avoid repeating the same work multiple times.
