@@ -1,0 +1,68 @@
+*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Merveille
+ */
+import java.util.Scanner;
+
+public class NewClass {
+
+    static Scanner scan = new Scanner(System.in);
+
+    static String name; //Customers Name//
+    
+    static String[] days = {"1) Monday","2) Tuesday","3) Wednesday","4) Thursday","5) Friday","6) Saturday","7) Sunday"};
+    
+    static String [] ticket = {"1) Standard","2) OAP","3) Student","4) Child"
+    };
+    
+    static int number; 
+    
+    public static void getName(){
+        System.out.println("Please insert your name?");
+        name=scan.nextLine();
+        System.out.println("Welcome to QA Cinema "+ name);
+        getDay();
+    
+        
+    }
+    public static void getDay(){
+            System.out.println("Please Select a day?");
+            for(int i=0;i<days.length;i++){
+            System.out.println(days[i]);
+        }
+        number=scan.nextInt();
+        System.out.println("You selected To view the movie on  " +days[number-1].substring(3,days[number-1].length()));
+        getticket();
+        
+    }
+
+    public static void getticket(){
+        System.out.println("Please select ticket type? **Student Must Bring ID**");
+        for(int i=0;i<ticket.length;i++){
+            System.out.println(ticket[i]);
+        }
+        number=scan.nextInt();
+        System.out.println(name + " You have selected "+ticket[number-1].substring(3,ticket[number-1].length())+ " ticket");
+        gettickamount();
+    }
+
+  
+    public static void gettickamount(){
+        System.out.println("how many tickets would you like?");
+        String tickamount=scan.next();
+        System.out.println("Thank you for Your Booking "+name +",\nYou have selected " +tickamount + ticket[number-1].substring(3,ticket[number-1].length()) +" Tickets");
+    }
+ 
+    public static void main(String[] args){
+        getName();
+    }
+  
+   
+
+    }
